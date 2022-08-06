@@ -22,7 +22,9 @@ html {
 3. tổng quản đến chi tiết
 */
 
-#main {}
+#main {
+    overflow: hidden;
+}
 
 .clear {
     clear: both;
@@ -36,13 +38,9 @@ html {
     text-align: center !important;
 }
 
-.mt-8 {
-    margin-top: 8px !important;
-}
 
-.mt-16 {
-    margin-top: 16px !important;
-}
+
+
 
 
 .row {
@@ -84,6 +82,14 @@ html {
     margin-top: 8px !important;
 }
 
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 .pull-right {
     float: right !important;
 }
@@ -98,6 +104,7 @@ html {
     height: 46px;
     background-color: #000;
     z-index: 1;
+
 }
 
 #nav {
@@ -133,7 +140,7 @@ html {
 }
 
 #nav li:hover .subnav {
-    display: inline-block;
+    display: block;
 }
 
 #nav .subnav li:hover a,
@@ -171,21 +178,40 @@ html {
     font-size: 14px;
 }
 
+#header .mobie-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobie-menu-btn,
 #header .search-btn {
     float: right;
+    padding: 0 21px;
 
 }
 
 #header .search-btn:hover {
     background-color: tomato;
+
     cursor: pointer;
 }
 
+#header .mobie-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobie-menu-btn:hover {
+    color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
     line-height: 46px;
-    padding: 0 21px;
+
 }
 
 
@@ -200,7 +226,7 @@ html {
     background-color: #333; */
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/img/slider1.jpg') top center / cover no-repeat;
+    background: url('../img/slider/slider2.jpg') top center / cover no-repeat;
 
 
 }
@@ -224,6 +250,9 @@ html {
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
+    font-size: 15px;
+    margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 
 }
 
@@ -234,9 +263,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -329,7 +361,7 @@ html {
 /* Places */
 .places-list {
     /* margin:  32px -8px 48px; */
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 48px;
 
 }
@@ -373,16 +405,19 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn {
+.btn {
     color: #fff;
     background-color: #000;
     border: none;
     padding: 11px 16px;
     display: inline-block;
     margin-top: 18px;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
-.place-buy-btn:hover {
+.btn:hover {
     color: #000;
     background-color: #ccc;
     cursor: pointer;
@@ -517,6 +552,15 @@ html {
 
 }
 
+.contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
 .contact-form {
     font-size: 15px;
 }
@@ -551,6 +595,7 @@ html {
     color: #757575;
     text-decoration: none;
 }
+
 #footer .copyright a:hover,
 #footer .social-list a:hover {
     color: #ccc;
@@ -561,6 +606,9 @@ html {
     margin-top: 15px;
     color: #757575;
 }
-#footer .copyright a{
+
+#footer .copyright a {
     color: #757575;
 }
+
+/* ============== */
